@@ -15,6 +15,8 @@
 		BDDEA78F1D951BF000D1F1E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDEA78D1D951BF000D1F1E6 /* LaunchScreen.storyboard */; };
 		BDDEA79A1D951BF000D1F1E6 /* RMTMonitorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDEA7991D951BF000D1F1E6 /* RMTMonitorDemoTests.m */; };
 		BDDEA7A51D951BF000D1F1E6 /* RMTMonitorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDEA7A41D951BF000D1F1E6 /* RMTMonitorDemoUITests.m */; };
+		BDDEA7B51D95218300D1F1E6 /* RMTMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDEA7B41D95218300D1F1E6 /* RMTMonitorManager.m */; };
+		BDDEA7B81D95220900D1F1E6 /* RMTRunloopMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDEA7B71D95220900D1F1E6 /* RMTRunloopMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		BDDEA7A01D951BF000D1F1E6 /* RMTMonitorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMTMonitorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDEA7A41D951BF000D1F1E6 /* RMTMonitorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMTMonitorDemoUITests.m; sourceTree = "<group>"; };
 		BDDEA7A61D951BF000D1F1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDEA7B31D95218300D1F1E6 /* RMTMonitorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTMonitorManager.h; sourceTree = "<group>"; };
+		BDDEA7B41D95218300D1F1E6 /* RMTMonitorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTMonitorManager.m; sourceTree = "<group>"; };
+		BDDEA7B61D95220900D1F1E6 /* RMTRunloopMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTRunloopMonitor.h; sourceTree = "<group>"; };
+		BDDEA7B71D95220900D1F1E6 /* RMTRunloopMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTRunloopMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,10 @@
 		BDDEA7B21D951C0300D1F1E6 /* RMTMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				BDDEA7B31D95218300D1F1E6 /* RMTMonitorManager.h */,
+				BDDEA7B41D95218300D1F1E6 /* RMTMonitorManager.m */,
+				BDDEA7B61D95220900D1F1E6 /* RMTRunloopMonitor.h */,
+				BDDEA7B71D95220900D1F1E6 /* RMTRunloopMonitor.m */,
 			);
 			path = RMTMonitor;
 			sourceTree = "<group>";
@@ -281,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDEA7B51D95218300D1F1E6 /* RMTMonitorManager.m in Sources */,
+				BDDEA7B81D95220900D1F1E6 /* RMTRunloopMonitor.m in Sources */,
 				BDDEA7871D951BF000D1F1E6 /* ViewController.m in Sources */,
 				BDDEA7841D951BF000D1F1E6 /* AppDelegate.m in Sources */,
 				BDDEA7811D951BF000D1F1E6 /* main.m in Sources */,
@@ -433,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RMTMonitorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.game3108.RMTMonitorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RMTMonitorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.game3108.RMTMonitorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

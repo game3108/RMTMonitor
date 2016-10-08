@@ -10,9 +10,6 @@
 #import <libkern/OSAtomic.h>
 #import <execinfo.h>
 
-
-
-
 @interface RMTRunloopMonitor()
 @property (nonatomic, assign) CFRunLoopObserverRef observer;
 @property (nonatomic, strong) dispatch_semaphore_t semaphore;

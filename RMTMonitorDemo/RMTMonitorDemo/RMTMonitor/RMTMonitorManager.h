@@ -26,6 +26,15 @@
 
 + (instancetype) sharedInstance;
 
+
+/**
+ start ui lag monitor
+ */
 - (void) rmt_startUIMonitor;
+
+
+/**
+ end ui lag monitor
+ */
 - (void) rmt_endUIMonitor;
 @end

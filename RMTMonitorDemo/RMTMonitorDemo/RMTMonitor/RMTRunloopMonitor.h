@@ -35,7 +35,15 @@
 
 + (instancetype) sharedInstance;
 
+/**
+ start monitor
+ */
 - (void) start;
+
+
+/**
+ end monitor
+ */
 - (void) stop;
 
 @end
